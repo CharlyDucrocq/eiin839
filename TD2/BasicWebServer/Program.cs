@@ -4,6 +4,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Web;
+using BasicWebServer;
 
 namespace BasicServerHTTPlistener
 {
@@ -74,7 +75,7 @@ namespace BasicServerHTTPlistener
                 
                 // get url 
                 Console.WriteLine($"Received request for {request.Url}");
-
+                
                 //get url protocol
                 Console.WriteLine(request.Url.Scheme);
                 //get user in url
@@ -102,6 +103,9 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine("param3 = " + HttpUtility.ParseQueryString(request.Url.Query).Get("param3"));
                 Console.WriteLine("param4 = " + HttpUtility.ParseQueryString(request.Url.Query).Get("param4"));
 
+
+                Header header = new Header(request);
+
                 //
                 Console.WriteLine(documentContents);
 
@@ -109,7 +113,7 @@ namespace BasicServerHTTPlistener
                 HttpListenerResponse response = context.Response;
 
                 // Construct a response.
-                string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
+                string responseString = "Le header est le suivant : \n"+header;
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;
