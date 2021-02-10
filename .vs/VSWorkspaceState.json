@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TP1",
+    "\\TP1\\Echo",
+    "\\TP1\\Echo\\ChatClient",
+    "\\TP1\\Echo\\ChatServer",
+    "\\TP1\\Echo\\www",
+    "\\TP1\\Echo\\www\\pub",
+    "\\TP1\\Echo\\www\\pub\\test"
+  ],
+  "SelectedNode": "\\TP1\\Echo\\TCP Clients Telnet and Web.sln",
+  "PreviewInSolutionExplorer": false
+}
