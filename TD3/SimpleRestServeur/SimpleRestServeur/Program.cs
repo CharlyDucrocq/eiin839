@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
+using ServiceReference1;
 
 namespace BasicServerHTTPlistener
 {
@@ -56,6 +57,10 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine("\nException Caught!");
                 Console.WriteLine("Message :{0} ", e.Message);
             }
+
+            CalculatorSoapClient calculator = new CalculatorSoapClient(CalculatorSoapClient.EndpointConfiguration.CalculatorSoap);
+
+            Console.WriteLine("1+2=" + calculator.AddAsync(1,2).Result);
         }
 
         public class Contract : Object
