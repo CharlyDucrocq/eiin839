@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SimpleRestServeur": {
+      "commandName": "Project",
+      "commandLineArgs": "rouen 5"
+    }
+  }
+}
