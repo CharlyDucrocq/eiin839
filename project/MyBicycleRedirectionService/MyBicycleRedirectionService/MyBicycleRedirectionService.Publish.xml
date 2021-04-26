@@ -1,0 +1,19 @@
+<publishData>
+  <publishTarget publishUrl="C:\Users\ducch\Desktop\Bossage\Tp-SOC\project_generation\service\">
+    <file relUrl="Web.config" publishTime="04/19/2021 21:55:44" />
+    <file relUrl="bin/System.Text.Encodings.Web.dll" publishTime="01/26/2021 17:44:38" />
+    <file relUrl="bin/System.Buffers.dll" publishTime="01/26/2021 17:44:38" />
+    <file relUrl="bin/MyBicycleRedirectionService.dll" publishTime="04/21/2021 16:22:47" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="03/17/2021 19:58:04" />
+    <file relUrl="bin/System.Numerics.Vectors.dll" publishTime="01/26/2021 17:44:38" />
+    <file relUrl="bin/System.Runtime.CompilerServices.Unsafe.dll" publishTime="01/26/2021 17:44:38" />
+    <file relUrl="bin/System.Threading.Tasks.Extensions.dll" publishTime="01/26/2021 17:44:38" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="03/17/2021 20:03:36" />
+    <file relUrl="bin/System.Memory.dll" publishTime="01/26/2021 17:44:38" />
+    <file relUrl="bin/Microsoft.Bcl.AsyncInterfaces.dll" publishTime="01/26/2021 17:44:37" />
+    <file relUrl="bin/System.Text.Json.dll" publishTime="01/26/2021 17:44:38" />
+    <file relUrl="MyBicycleRedirectionService.RedirectionService.svc" publishTime="04/22/2021 15:50:06" />
+    <file relUrl="bin/MyBicycleRedirectionService.dll.config" publishTime="04/19/2021 21:55:44" />
+    <file relUrl="bin/MyBicycleRedirectionService.pdb" publishTime="04/21/2021 16:22:47" />
+  </publishTarget>
+</publishData>

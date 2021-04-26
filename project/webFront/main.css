@@ -1,0 +1,12 @@
+#map {
+    height : 25em;
+    width : 100%;
+}
+
+#step1 h2 {
+    color: green;
+}
+
+#step2 h2 {
+    color: red;
+}

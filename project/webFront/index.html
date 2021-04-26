@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bicycle Redirection Webpage</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
+          type=" text / css ">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js "></script>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+</head>
+<body>
+
+    <div id="step1" class="step">
+        <h2>Step 1: StartingPoint.</h2>
+        <div id="startPoint" class="pointAsk">
+            <label for="startLng">Longitude :</label>
+            <input name="startLngInput" id="startLng">
+            <label for="startLat">Latitude :</label>
+            <input name="startLatInput" id="startLat">
+            <button onclick="selectCurrentUpTarget('start')">Select on map</button>
+        </div>
+    </div>
+
+    <div id="step2" class="step">
+        <h2>Step 2: EndingPoint.</h2>
+        <div id=endPoint" class="pointAsk">
+            <label for="endLng">Longitude :</label>
+            <input name="endLngInput" id="endLng">
+            <label for="endLat">Latitude :</label>
+            <input name="endLatInput" id="endLat">
+            <button onclick="selectCurrentUpTarget('end')">Select on map</button>
+        </div>
+    </div>
+
+    <div id="step3" class="step">
+        <h2>Step 3: Ask for traject.</h2>
+        <button id="validatebutton" onclick="sendRequest();">Validate</button>
+        <div id="responseBox"></div>
+    </div>
+    <br />
+    <div id="map" class="map"></div>
+    <div id="mouse-position"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
