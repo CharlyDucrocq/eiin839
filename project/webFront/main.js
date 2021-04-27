@@ -17,8 +17,8 @@ var map = new ol.Map({
         })],
     target: 'map',
     view: new ol.View({
-        center: [0, 0],
-        zoom: 2,
+        center: ol.proj.fromLonLat([4.84810807, 45.74745467]),
+        zoom: 10,
     }),
 });
 
@@ -59,6 +59,7 @@ function addIcon(iconName, coordinate) {
             return feature.get('style');
         },
         source: vectorSource,
+        zIndex: 1,
     })
 
     map.addLayer(iconLayer);
@@ -143,7 +144,7 @@ function getResponse() {
 
     var vector = new ol.layer.Vector({
         source: source,
-        style: [lineStyle]
+        style: [lineStyle],
     });
 
     var traceName = "trace";
